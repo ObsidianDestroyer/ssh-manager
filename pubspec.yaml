@@ -1,0 +1,8 @@
+name: ssh_manager
+description: A simple cli application to manage your SSH connections.
+version: 0.0.1
+environment:
+  sdk: '>=2.18.1'
+
+dependencies:
+  path: ^1.8.2
