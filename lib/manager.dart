@@ -9,7 +9,10 @@ void initManager() {
   try {
     String homeDirectory = getHomeDirectory();
     String sshDirectory = getSshDirectory(homeDirectory);
-    stdout.writeln(sshDirectory);
+    List<Host> knownHosts = getSshKnowHosts(sshDirectory);
+    // for (var host in knownHosts) {
+    //   print(host.algorithm);
+    // }
   } on NullThrownError {
     stdout.writeln(
       'Your "\$HOME" environment variable '
